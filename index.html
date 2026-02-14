@@ -1,237 +1,356 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ivan's portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script
+            src="https://kit.fontawesome.com/d5335a0ae8.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivan's portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/d5335a0ae8.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <nav>
-        <ul>
-            <li>
-                <h1><a href="index.html">
-                        <span aria-hidden="true" class="fa-solid fa-bolt"></span>
-                        <span>Ivan Osipov</span>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <h1>
+                        <a href="index.html">
+                            <span
+                                aria-hidden="true"
+                                class="fa-solid fa-bolt"
+                            ></span>
+                            <span>Ivan Osipov</span>
+                        </a>
+                    </h1>
+                </li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/ivan-osipov-5a020343/"
+                        target="_blank"
+                    >
+                        <span
+                            aria-hidden="true"
+                            class="fa-brands fa-linkedin"
+                        ></span>
+                        <span class="sr-only">LinkedIn</span>
                     </a>
-                </h1>
-            </li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://www.linkedin.com/in/ivan-osipov-5a020343/" target="_blank">
-                    <span aria-hidden="true" class="fa-brands fa-linkedin"></span>
-                    <span class="sr-only">LinkedIn</span>
-                </a>
-            </li>
-            <li><a href="https://github.com/io89" target="_blank">
-                    <span aria-hidden="true" class="fa-brands fa-square-github"></span>
-                    <span class="sr-only">GitHub</span>
-                </a></li>
-            <li><a class="button"
-                    href="https://drive.google.com/file/d/1k0X1qYwpUa3XDbdkZDw2pWdw7OYl8MNE/view?usp=sharing">Resume</a>
-            </li>
-        </ul>
-    </nav>
-    <section id="intro">
-        <p class="name">Hi, my name is <span>Ivan Osipov</span></p>
-        <h2>Full stack developer</h2>
-        <p>Software developer with over 8 years of experience. Specialise web and mobile development.
-            <br>
-            <br>
-            Committed to build end-to-end solutions and ensure smooth user experience.</p>
-        <p>Currently, I'm working at <a href="https://www.fortum.com/"
-                target="_blank">Fortum</a></p>
-    </section>
-
-    <div class="gradient"></div>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <article>
-            <h3>Fortum</h3>
-            <p class="blackbox">
-                Building and improving customer facing mobile application.
-                <br>
-                <br>
-                Ensuring a smooth user experience for electricity spot price tracking.
-                This includes integrating smart services to enable efficient electric vehicle charging and optimized household heating.
-            </p>
-            <h4>Technologies used include:</h4>
-            <ul>
-                <li>React Native</li>
-                <li>NodeJS</li>
-                <li>Typescript</li>
-                <li>Reanimated</li>
-                <li>GraphQL</li>
-                <li>Contentful</li>
-                <li>Firebase</li>
+                </li>
+                <li>
+                    <a href="https://github.com/io89" target="_blank">
+                        <span
+                            aria-hidden="true"
+                            class="fa-brands fa-square-github"
+                        ></span>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="button"
+                        href="https://drive.google.com/file/d/1k0X1qYwpUa3XDbdkZDw2pWdw7OYl8MNE/view?usp=sharing"
+                        >Resume</a
+                    >
+                </li>
             </ul>
-            <h3>Phaver</h3>
-            <p class="blackbox">
-                Working on web3 social media platform build on top of Lens and Farcaster protocols. It allows to build social graphs that are owned by users.
-                <br>
-                <br>
-                Application allows to create posts, follow users, participate in community discussions.
-                <br>
-                <br>
-                My role includes working with app and backend services in order to provide seamless user experience for multiprotocol social media platform. It is quite new and fast changing environment, so solutions need to be built with flexibility in mind.
+        </nav>
+        <section id="intro">
+            <p class="name">Hi, my name is <span>Ivan Osipov</span></p>
+            <h2>Full stack developer</h2>
+            <p>
+                Software developer with over 8 years of experience. Specialise
+                web and mobile development.
+                <br />
+                <br />
+                Committed to build end-to-end solutions and ensure smooth user
+                experience.
             </p>
-            <h4>Technologies used include:</h4>
-            <ul>
-                <li>React Native</li>
-                <li>NodeJS</li>
-                <li>PostgreSQL</li>
-                <li>Typescript</li>
-                <li>Expo</li>
-                <li>Reanimated</li>
-                <li>GraphQL</li>
-                <li>Hasura</li>
-                <li>Lens protocol</li>
-                <li>Farcaster </li>
-            </ul>
-        <h3>Hormona</h3>
-            <p class="blackbox">
-                I was working on a cross-platform mobile app that helps women to take control over their hormonal health at <a href="https://www.hormona.io/" target="_blank">Hormona</a>.
-                <br>
-                <br>
-                Application allows to monitor qualitative hormonal data and provides insights on hormonal health.
-                <br>
-                <br>
-                My role includes building features, improving performance and maintaining app codebase. Mostly focusing on minimizing tech debt and improving code quality.
-                Working closely with designers on creating engaging user interfaces. Building community in the app where users can share their experiences and support each other.
-                Building educational content system with help of contentful CMS.
+            <p>
+                Currently, I'm working at
+                <a href="https://tell-ia.com/" target="_blank">Tellia</a>
             </p>
-            <h4>Technologies used include:</h4>
+        </section>
+
+        <div class="gradient"></div>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Tellia</h3>
+                <p class="blackbox">
+                    Building mobile applications using React Native at
+                    <a href="https://tell-ia.com/" target="_blank">Tellia</a>.
+                    <br />
+                    <br />
+                    Focused on developing voice AI agent that enables natural
+                    conversations and provides intelligent assistance. Building
+                    cross-platform mobile solutions that deliver seamless user
+                    experiences. Working on implementing new features,
+                    optimizing performance, and maintaining high code quality
+                    standards.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>React Native</li>
+                    <li>Typescript</li>
+                    <li>Expo</li>
+                    <li>Reanimated</li>
+                </ul>
+                <h3>Fortum</h3>
+                <p class="blackbox">
+                    Built and improved customer facing mobile application.
+                    <br />
+                    <br />
+                    Ensured a smooth user experience for electricity spot price
+                    tracking. This includes integrating smart services to enable
+                    efficient electric vehicle charging and optimized household
+                    heating.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>React Native</li>
+                    <li>NodeJS</li>
+                    <li>Typescript</li>
+                    <li>Reanimated</li>
+                    <li>GraphQL</li>
+                    <li>Contentful</li>
+                    <li>Firebase</li>
+                </ul>
+                <h3>Phaver</h3>
+                <p class="blackbox">
+                    Working on web3 social media platform build on top of Lens
+                    and Farcaster protocols. It allows to build social graphs
+                    that are owned by users.
+                    <br />
+                    <br />
+                    Application allows to create posts, follow users,
+                    participate in community discussions.
+                    <br />
+                    <br />
+                    My role includes working with app and backend services in
+                    order to provide seamless user experience for multiprotocol
+                    social media platform. It is quite new and fast changing
+                    environment, so solutions need to be built with flexibility
+                    in mind.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>React Native</li>
+                    <li>NodeJS</li>
+                    <li>PostgreSQL</li>
+                    <li>Typescript</li>
+                    <li>Expo</li>
+                    <li>Reanimated</li>
+                    <li>GraphQL</li>
+                    <li>Hasura</li>
+                    <li>Lens protocol</li>
+                    <li>Farcaster</li>
+                </ul>
+                <h3>Hormona</h3>
+                <p class="blackbox">
+                    I was working on a cross-platform mobile app that helps
+                    women to take control over their hormonal health at
+                    <a href="https://www.hormona.io/" target="_blank">Hormona</a
+                    >.
+                    <br />
+                    <br />
+                    Application allows to monitor qualitative hormonal data and
+                    provides insights on hormonal health.
+                    <br />
+                    <br />
+                    My role includes building features, improving performance
+                    and maintaining app codebase. Mostly focusing on minimizing
+                    tech debt and improving code quality. Working closely with
+                    designers on creating engaging user interfaces. Building
+                    community in the app where users can share their experiences
+                    and support each other. Building educational content system
+                    with help of contentful CMS.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>React Native</li>
+                    <li>NodeJS</li>
+                    <li>PostgreSQL</li>
+                    <li>Typescript</li>
+                    <li>Expo</li>
+                    <li>Redux</li>
+                    <li>Contentful</li>
+                    <li>Reanimated</li>
+                </ul>
+                <h3>Veri</h3>
+                <p class="blackbox">
+                    I was working on mobile app that helps to track and improve
+                    metabolic health at
+                    <a href="https://veri.co" target="_blank">Veri</a>.
+                    <br />
+                    <br />
+                    Application reads users continuous glucose data from CGM
+                    monitor and provides insights on glucose response for
+                    different foods.
+                    <br />
+                    <br />
+                    My main focus was on building new features, enabling
+                    educational content, analysing user glucose data and
+                    providing insights to users. Was building educational
+                    content system with help of Sanity CMS. Integrating
+                    nutritional database to provide insights on food. Tracking
+                    user sleep, activities and syncing them with Apple Health
+                    and Google Fit.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>React Native</li>
+                    <li>NodeJS</li>
+                    <li>postgreSQL</li>
+                    <li>Typescript</li>
+                    <li>GraphQL</li>
+                    <li>Realm</li>
+                    <li>Sanity</li>
+                    <li>Reanimated</li>
+                </ul>
+
+                <h3>Aiven</h3>
+                <p class="blackbox">
+                    I was building web client to interact with
+                    <a href="https://aiven.io/" target="_blank"
+                        >Aiven platform.</a
+                    >
+                    <br />
+                    <br />
+                    Platform aims to abstract handling of cloud infrastructure
+                    and provide easy to use interface for developers.
+                    <br />
+                    <br />
+                    My role was to build customer facing console that allows to
+                    manage cloud resources and monitor their usage. Implementing
+                    user interface for features that are available from Aiven
+                    CLI.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Python</li>
+                    <li>Typescript</li>
+                </ul>
+
+                <h3>Futurice</h3>
+                <p class="blackbox">
+                    Developing end-to-end solutions for clients at
+                    <a href="https://futurice.com/">Futurice</a>
+                    <br />
+                    <br />
+                    Clients from various industries including advertisement,
+                    mass media, automotive industry.
+                    <br />
+                    <br />
+                    Was working as full stack developers in automotive industry,
+                    media and advertisement, recycling and waste management.
+                    Majority of projects were web applications.
+                    <br />
+                    <br />
+                    For recycling and waste management industry was building web
+                    application that allowed to register item in system. The
+                    goal was to streamline process of taking photos,
+                    measurements and registering items in system.
+                    <br />
+                    <br />
+                    For automotive industry was building web application that
+                    allowed to rent cars in car-sharing service. The goal was to
+                    provide easy to use interface for users to rent cars.
+                    <br />
+                    <br />
+                    For media and advertisement was building web application
+                    that allowed to create and automate advertisement campaigns
+                    for a specific social media platform. The goal was to create
+                    integration with the platform and provide easy to use
+                    interface for users to create and manage campaigns.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>React</li>
+                    <li>React Native</li>
+                    <li>Redux</li>
+                    <li>NodeJS</li>
+                    <li>Typescript</li>
+                    <li>AWS</li>
+                    <li>GCP</li>
+                    <li>Terraform</li>
+                </ul>
+            </article>
+        </section>
+
+        <div class="gradient"></div>
+        <div class="section-drkgreen">
+            <section id="contact">
+                <h2>Contact me</h2>
+                <p>
+                    Reach out and see how I can help take your project to the
+                    next level.
+                </p>
+                <p>
+                    <a class="button" href="mailto:osipov.ivan.89@gmail.com"
+                        >Email me</a
+                    >
+                </p>
+            </section>
+        </div>
+
+        <div class="gradient"></div>
+
+        <section id="footer">
+            <h2>Ivan Osipov | Full stack developer</h2>
             <ul>
-                <li>React Native</li>
-                <li>NodeJS</li>
-                <li>PostgreSQL</li>
-                <li>Typescript</li>
-                <li>Expo</li>
-                <li>Redux</li>
-                <li>Contentful</li>
-                <li>Reanimated</li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/ivan-osipov-5a020343/"
+                        target="_blank"
+                    >
+                        <span
+                            aria-hidden="true"
+                            class="fa-brands fa-linkedin"
+                        ></span>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.github.com/io89" target="_blank">
+                        <span
+                            aria-hidden="true"
+                            class="fa-brands fa-square-github"
+                        ></span>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:osipov.ivan.89@gmail.com">
+                        <span
+                            aria-hidden="true"
+                            class="fa-solid fa-envelope"
+                        ></span>
+                        <span class="sr-only">Email</span>
+                    </a>
+                </li>
             </ul>
-        <h3>Veri</h3>
-        <p class="blackbox">
-            I was working on mobile app that helps to track and improve metabolic health at <a href="https://veri.co" target="_blank">Veri</a>.
-            <br>
-            <br>
-            Application reads users continuous glucose data from CGM monitor and provides insights on glucose response for different foods.
-            <br>
-            <br>
-            My main focus was on building new features, enabling educational content, analysing user glucose data and providing insights to users.
-            Was building educational content system with help of Sanity CMS. Integrating nutritional database to provide insights on food.
-            Tracking user sleep, activities and syncing them with Apple Health and Google Fit.
-        </p>
-        <h4>Technologies used include:</h4>
-        <ul>
-            <li>React Native</li>
-            <li>NodeJS</li>
-            <li>postgreSQL</li>
-            <li>Typescript</li>
-            <li>GraphQL</li>
-            <li>Realm</li>
-            <li>Sanity</li>
-            <li>Reanimated</li>
-        </ul>
-
-        <h3>Aiven</h3>
-        <p class="blackbox">I was building web client to interact with <a href="https://aiven.io/" target="_blank">Aiven platform.</a>
-            <br>
-            <br>
-        Platform aims to abstract handling of cloud infrastructure and provide easy to use interface for developers.
-            <br>
-            <br>
-            My role was to build customer facing console that allows to manage cloud resources and monitor their usage.
-            Implementing user interface for features that are available from Aiven CLI.
-        </p>
-        <h4>Technologies used include:</h4>
-        <ul>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Python</li>
-            <li>Typescript</li>
-        </ul>
-
-        <h3>Futurice</h3>
-        <p class="blackbox">Developing end-to-end solutions for clients at <a href="https://futurice.com/">Futurice</a>
-            <br>
-            <br>
-        Clients from various industries including advertisement, mass media, automotive industry.
-            <br>
-            <br>
-            Was working as full stack developers in automotive industry, media and advertisement, recycling and waste management. Majority of projects were web applications.
-            <br>
-            <br>
-            For recycling and waste management industry was building web application that allowed to register item in system. The goal was to streamline process of taking photos, measurements and registering items in system.
-            <br>
-            <br>
-            For automotive industry was building web application that allowed to rent cars in car-sharing service. The goal was to provide easy to use interface for users to rent cars.
-            <br>
-            <br>
-            For media and advertisement was building web application that allowed to create and automate advertisement campaigns for a specific social media platform.
-            The goal was to create integration with the platform and provide easy to use interface for users to create and manage campaigns.
-        </p>
-        <h4>Technologies used include:</h4>
-        <ul>
-            <li>React</li>
-            <li>React Native</li>
-            <li>Redux</li>
-            <li>NodeJS</li>
-            <li>Typescript</li>
-            <li>AWS</li>
-            <li>GCP</li>
-            <li>Terraform</li>
-        </ul>
-        </article>
-    </section>
-
-    <div class="gradient"></div>
-    <div class="section-drkgreen">
-    <section id="contact">
-        <h2>Contact me</h2>
-            <p>Reach out and see how I can help take your project to the next level.</p>
-            <p><a class="button" href="mailto:osipov.ivan.89@gmail.com">Email me</a></p>
-    </section>
-    </div>
-
-    <div class="gradient"></div>
-
-    <section id="footer">
-        <h2>Ivan Osipov | Full stack developer</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/ivan-osipov-5a020343/" target="_blank">
-                    <span aria-hidden="true" class="fa-brands fa-linkedin"></span>
-                    <span class="sr-only">LinkedIn</span>
-                </a>
-            </li>
-            <li><a href="https://www.github.com/io89" target="_blank">
-                    <span aria-hidden="true" class="fa-brands fa-square-github"></span>
-                    <span class="sr-only">GitHub</span>
-                </a></li>
-            <li>
-                <a href="mailto:osipov.ivan.89@gmail.com">
-                    <span aria-hidden="true" class="fa-solid fa-envelope"></span>
-                    <span class="sr-only">Email</span>
-                </a>
-            </li>
-        </ul>
-        <p><small>&copy Ivan Osipov <span id="current-date"></span></small></p>
-    </section>
-    <script>
-        const currentDate = new Date();
-        const year = currentDate.getFullYear();
-        document.getElementById("current-date").innerHTML = year.toString();
-    </script>
-</body>
-
+            <p>
+                <small>&copy Ivan Osipov <span id="current-date"></span></small>
+            </p>
+        </section>
+        <script>
+            const currentDate = new Date();
+            const year = currentDate.getFullYear();
+            document.getElementById("current-date").innerHTML = year.toString();
+        </script>
+    </body>
 </html>
