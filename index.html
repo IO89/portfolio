@@ -69,7 +69,7 @@
             <p class="name">Hi, my name is <span>Ivan Osipov</span></p>
             <h2>Full stack developer</h2>
             <p>
-                Software developer with over 8 years of experience. Specialise
+                Software developer with over <span id="years-experience">9</span> years of experience. Specialise
                 web and mobile development.
                 <br />
                 <br />
@@ -78,7 +78,7 @@
             </p>
             <p>
                 Currently, I'm working at
-                <a href="https://tell-ia.com/" target="_blank">Tellia</a>
+                <a href="https://tellia.com/" target="_blank">Telia</a>
             </p>
         </section>
 
@@ -93,12 +93,11 @@
                     <a href="https://tell-ia.com/" target="_blank">Tellia</a>.
                     <br />
                     <br />
-                    Focused on developing voice AI agent that enables natural
-                    conversations and provides intelligent assistance. Building
-                    cross-platform mobile solutions that deliver seamless user
-                    experiences. Working on implementing new features,
-                    optimizing performance, and maintaining high code quality
-                    standards.
+                    Primarily responsible for the mobile applications: building
+                    features, improving performance and shipping releases. Also
+                    contributed beyond mobile by setting up infrastructure and
+                    servers, building a marketing website, doing design work
+                    and creating automated QA tests for the mobile pipelines.
                 </p>
                 <h4>Technologies used include:</h4>
                 <ul>
@@ -107,6 +106,29 @@
                     <li>Expo</li>
                     <li>Reanimated</li>
                     <li>NodeJS</li>
+                    <li>Mongo</li>
+                    <li>BullMQ</li>
+                </ul>
+                <h3>Mamagayo</h3>
+                <p class="blackbox">
+                    Side project: mobile app for learning French at
+                    <a href="https://www.mamagayo.app/" target="_blank"
+                        >Mamagayo</a
+                    >.
+                    <br />
+                    <br />
+                    Service lets learners speak naturally with their voice and
+                    practice scenarios through simulated
+                    conversations. Responsbile for building mobile application, eval pipelines and ai agents for practicing speaking skills.
+                </p>
+                <h4>Technologies used include:</h4>
+                <ul>
+                    <li>React Native</li>
+                    <li>Typescript</li>
+                    <li>Expo</li>
+                    <li>Reanimated</li>
+                    <li>NodeJS</li>
+                    <li>PostgreSQL</li>
                 </ul>
                 <h3>Fortum</h3>
                 <p class="blackbox">
@@ -352,6 +374,9 @@
             const currentDate = new Date();
             const year = currentDate.getFullYear();
             document.getElementById("current-date").innerHTML = year.toString();
+            document.getElementById("years-experience").textContent = (
+                year - 2017
+            ).toString();
         </script>
     </body>
 </html>
