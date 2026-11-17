@@ -114,15 +114,16 @@ nav [class*="fa-"]:hover {
     display: block;
 }
 #intro h2{
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 8vw, 4rem);
     font-weight: normal ;
 }
 /* Contact section  */
 #contact {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 4rem 1rem;
 }
 
 #contact p:last-child {
@@ -143,26 +144,41 @@ nav [class*="fa-"]:hover {
     color: var(--dkblue);
 }
 
-/* Project section */
+/* Skills, experience and project sections */
+#skills,
+#experience,
 #projects {
     padding: 4rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
+#skills h2,
+#experience h2,
 #projects h2 {
     font-size: 2.5rem;
     margin-bottom: calc(2.5rem * 1.5);
 }
+#experience h3,
 #projects h3{
     color: var(--ltgreen);
     margin-top: calc(2.5rem * 1.5);
 }
+#experience article > h3:first-child,
+#projects article > h3:first-child {
+    margin-top: 0;
+}
+#skills h4,
+#experience h4,
 #projects h4{
     font-size: 1rem;
     font-family: var(--mono);
-    margin: 0;
+    margin: 1rem 0 0.5rem 0;
 }
-#projects ul{
+#skills h2 + h4 {
+    margin-top: 0;
+}
+/* technology chips */
+ul.tech{
     list-style-type: none;
     padding:0;
     margin:0;
@@ -171,6 +187,20 @@ nav [class*="fa-"]:hover {
     justify-content: flex-start;
     gap: 1rem;
     font-size: 1rem;
+}
+/* role title and dates under the company name */
+.role-meta {
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    margin: 0.25rem 0 1rem 0;
+}
+/* bullet lists inside the black boxes */
+ul.bullets {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+ul.bullets li + li {
+    margin-top: 0.5rem;
 }
 
 
@@ -212,8 +242,9 @@ nav [class*="fa-"]:hover {
     border-left: 1px solid var(--sand);
     border-top: 1px solid var(--sand);
     border-radius: 25px;
-    max-width: 400px;
+    max-width: min(100%, 400px);
     max-height: 400px;
+    object-fit: cover;
 }
 
 @media (min-width: 800px) {
@@ -246,9 +277,6 @@ nav [class*="fa-"]:hover {
     #about .reverse img {
         grid-column: 6/11;
         grid-row: 1/2;
-    }
-    #projects .reverse ul {
-        justify-content: flex-start;
     }
 }
 
