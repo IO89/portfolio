@@ -50,13 +50,16 @@ Defined in CSS custom properties at `:root`:
 
 ## Common Updates
 
-**Adding a new project:**
-Add a new `<h3>` and project block inside `#projects article` in `index.html`, following the existing structure with title, description in `.blackbox`, and technology list.
+**Adding a new role or project:**
+Add a new `<h3>`, a `<p class="role-meta">` (title and dates), a `<div class="blackbox">` with a `<ul class="bullets">`, and a `<ul class="tech">` chip list inside `#experience article` (jobs) or `#projects article` (side projects) in `index.html`. Keep it in sync with the resume.
 
 **Updating contact info:**
-- Main page: `index.html` line 304 (email) and footer links
-- About page: `about.html` line 67 (email) and footer links
-- Update Google Drive resume link in both navigation bars
+- Email (`ivan.osx@proton.me`) appears in the `#contact` section and footer of both `index.html` and `about.html`. Search for `mailto:`.
+- Update the Google Drive resume link in both navigation bars.
+- Page title, meta description, Open Graph tags and JSON-LD `Person` markup live in the `<head>` of `index.html` (about.html has title/meta/OG only). Update them with job title or location changes.
+
+**Years of experience:**
+`#years-experience` in `index.html` is computed in the inline script as the current year minus 2018 (first role: Futurice internship, August 2018). The "+" is static text.
 
 **Modifying colors:**
 Update CSS custom properties in `styles.css` at `:root` (lines 1-11).
